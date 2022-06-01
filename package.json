@@ -7,7 +7,9 @@
     "deploy": "graph deploy --node https://api.thegraph.com/deploy/ MuhammadWaqas4/test",
     "create-local": "graph create --node http://localhost:8020/ MuhammadWaqas4/test",
     "remove-local": "graph remove --node http://localhost:8020/ MuhammadWaqas4/test",
-    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 MuhammadWaqas4/test"
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 MuhammadWaqas4/test",
+    "authGraph": "graph auth --product hosted-service 0bd0e75aa40545ce80a6cb89131fb0b9",
+    "deploy-hosted": "graph deploy --product hosted-service MuhammadWaqas4/test"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "0.30.2",

@@ -1,6 +1,26 @@
-type ExampleEntity @entity {
+type Transaction @entity {
   id: ID!
-  count: BigInt!
-  owner: Bytes! # address
-  spender: Bytes! # address
+  timestamp: BigInt!
+  blockNumber: BigInt!
+  blockHash: Bytes!
+  from: Bytes!
+  to: Bytes
+  value: BigInt!
+  gasPrice: BigInt!
+}
+
+type Approval @entity {
+  id: ID!
+  transaction: Transaction!
+  owner: Bytes!
+  spender: Bytes!
+  value: BigInt!
+}
+
+type Transfer @entity {
+  id: ID!
+  transaction: Transaction!
+  from: Bytes!
+  to: Bytes!
+  value: BigInt!
 }
