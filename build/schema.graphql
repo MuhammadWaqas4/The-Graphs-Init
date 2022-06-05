@@ -21,6 +21,4 @@ type Transfer @entity {
   id: ID!
   transaction: Transaction!
   from: Bytes!
-  to: Bytes!
-  value: BigInt!
 }
