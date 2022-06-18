@@ -13,4 +13,19 @@
         spender
         value
     }
+
+    balanceOf{
+        id
+        from
+        to
+        value
+
+    } 
+  transferFrom{
+        id
+        owner
+        spender
+        value
+    }
+}
 }
