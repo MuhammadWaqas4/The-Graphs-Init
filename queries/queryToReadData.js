@@ -6,7 +6,8 @@
         to
         value
 
-    } 
+    }
+
   approvals{
         id
         owner
@@ -20,12 +21,12 @@
         to
         value
 
-    } 
+    }
+    
   transferFrom{
         id
         owner
         spender
         value
     }
-}
 }
