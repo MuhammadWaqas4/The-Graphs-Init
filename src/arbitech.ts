@@ -31,3 +31,13 @@ export function handleTransfer(event: TransferEvent): void {
   entity.value = event.params.value
   entity.save()
 }
+
+export function handleTransferFrom(event: TransferEvent): void {
+  let transaction = loadOrCreateTransaction(event.transaction, event.block);
+  let entity = new Transfer(transaction.id)
+  entity.transaction = transaction.id
+  entity.from = event.params.from
+  entity.to = event.params.to
+  entity.value = event.params.value
+  entity.save()
+}
